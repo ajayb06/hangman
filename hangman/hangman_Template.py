@@ -78,7 +78,21 @@ class Hangman:
         # TODO 1: The letter has to comply with the following criteria: It has to be a single character. If it is not, print "Please, enter just one character"
         # TODO 2. It has to be a letter that has not been tried yet. Use the list_letters attribute to check this. If it has been tried, print "{letter} was already tried".
         # TODO 3: If the letter is valid, call the check_letter method
-        pass
+        while True:
+            letter = input("Enter a letter: ")
+
+            if len(letter) != 1:
+                print("Please, enter just one character")
+                continue
+
+            if letter in self.list_letters:
+                print("{letter} was already tried")
+                continue
+
+            self.check_letter(letter)
+            
+            break
+        
 
 def play_game(word_list):
     # As an aid, part of the code is already provided:
