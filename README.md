@@ -8,3 +8,8 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - Randomizing options from a list
 - Getting user input
 - Checking single character inputs
+- Creating an understandle interfect in the terminal to allow the user to play the game
+- Debugging code where minor errors had occurred
+- Commenting the code for easier understanding
+- Appropriate function names
+- Committing changes to github
